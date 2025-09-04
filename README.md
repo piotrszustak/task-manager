@@ -8,6 +8,7 @@
 - [Technologies](#technologies)
 - [System Requirements](#system-requirements)
 - [Configuration](#configuration)
+- [Credits](#credits)
 - [Author](#author)
 
 ## Project Description
@@ -39,6 +40,10 @@ Clone the repository:
    ```sh
    git clone https://github.com/piotrszustak/task-manager.git
    ```
+
+## Credits
+
+- Fonts: Inter and Montserrat from [Google Fonts](https://fonts.google.com/)
 
 ## Author
 
