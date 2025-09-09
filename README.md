@@ -36,9 +36,18 @@ Task Manager is a web application that allows users to manage tasks. The applica
 
 ## Configuration
 
-Clone the repository:
+1. Clone the repository:
    ```sh
    git clone https://github.com/piotrszustak/task-manager.git
+   ```
+
+2. Create a PostgreSQL database (default name: `task_manager`).
+
+3. Update `src/main/resources/application.properties` with your local credentials if needed. Default values:
+   ```properties
+   spring.datasource.url=jdbc:postgresql://localhost:5432/task_manager
+   spring.datasource.username=postgres
+   spring.datasource.password=postgres
    ```
 
 ## Credits
