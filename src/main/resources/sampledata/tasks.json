@@ -1,0 +1,22 @@
+[
+  {
+    "title": "MVP",
+    "description": "Collect and consider the MVP suggestions",
+    "completed": true
+  },
+  {
+    "title": "Call the client",
+    "description": "Schedule a meeting to discuss project requirements",
+    "completed": true
+  },
+  {
+    "title": "Buy a plane ticket",
+    "description": "",
+    "completed": true
+  },
+  {
+    "title": "Prepare presentation",
+    "description": "Complete the presentation and send it for review",
+    "completed": false
+  }
+]
