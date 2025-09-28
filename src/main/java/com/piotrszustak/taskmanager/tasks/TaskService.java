@@ -8,12 +8,17 @@ import java.util.List;
 public class TaskService {
 
     private final TaskRepository taskRepository;
+    private final TaskMapper taskMapper;
 
-    public TaskService(TaskRepository taskRepository) {
+    public TaskService(TaskRepository taskRepository, TaskMapper taskMapper) {
         this.taskRepository = taskRepository;
+        this.taskMapper = taskMapper;
     }
 
-    public List<Task> getTasks() {
-        return taskRepository.findAll();
+    public List<TaskDto> getTasks() {
+        return taskRepository.findAll()
+                .stream()
+                .map(taskMapper::toDto)
+                .toList();
     }
 }
