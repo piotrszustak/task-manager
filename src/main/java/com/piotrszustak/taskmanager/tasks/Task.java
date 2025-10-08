@@ -18,14 +18,14 @@ public class Task extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
-    @Column(name = "creation_date", nullable = false, updatable = false)
-    private LocalDateTime creationDate;
-    @Column(name = "update_date", nullable = false)
-    private LocalDateTime updateDate;
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private final LocalDateTime createdAt;
+    @Column(name = "updated_at", nullable = false)
+    private LocalDateTime updatedAt;
 
     public Task() {
-        this.creationDate = LocalDateTime.now();
-        this.updateDate = this.creationDate;
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = this.createdAt;
     }
 
     public String getTitle() {
@@ -60,11 +60,11 @@ public class Task extends BaseEntity {
         this.category = category;
     }
 
-    public LocalDateTime getCreationDate() {
-        return creationDate;
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 
-    public LocalDateTime getUpdateDate() {
-        return updateDate;
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
     }
 }
