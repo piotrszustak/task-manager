@@ -3,7 +3,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -20,7 +21,7 @@ header {
     background-color: #1e90ff;
     color: white;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 main {
@@ -35,7 +36,7 @@ footer {
     color: white;
     text-align: center;
     padding: 0.5rem;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
     font-size: 0.9rem;
 }
 
@@ -51,31 +52,31 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.category-list {
+.categories {
     background-color: #f5f7fa;
     border-right: 1px solid #ddd;
     padding: 1rem;
     overflow-y: auto;
 }
 
-.category-list ul {
+.categories ul {
     list-style: none;
 }
 
-.category-list li {
+.categories li {
     cursor: pointer;
 }
 
-.task-list {
+.tasks {
     padding: 1rem;
     overflow-y: auto;
 }
 
-.task-list ul {
+.tasks ul {
     list-style: none;
 }
 
-.task-list li {
+.tasks li {
     cursor: pointer;
 }
 
