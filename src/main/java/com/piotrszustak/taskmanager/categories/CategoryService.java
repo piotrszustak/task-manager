@@ -21,4 +21,10 @@ public class CategoryService {
                 .map(categoryMapper::toDto)
                 .toList();
     }
+
+    public CategoryDto addCategory(CategoryDto categoryDto) {
+        Category category = categoryMapper.toEntity(categoryDto);
+        Category savedCategory = categoryRepository.save(category);
+        return categoryMapper.toDto(savedCategory);
+    }
 }

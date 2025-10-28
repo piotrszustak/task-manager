@@ -18,4 +18,10 @@ public class CategoryMapper {
                 category.getName(),
                 taskIds);
     }
+
+    public Category toEntity(CategoryDto categoryDto) {
+        Category category = new Category();
+        category.setName(categoryDto.name());
+        return category;
+    }
 }

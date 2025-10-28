@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -52,6 +53,21 @@ h2 {
     margin-bottom: 1rem;
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+dialog {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow-y: auto;
+}
+
 .categories {
     background-color: #f5f7fa;
     border-right: 1px solid #ddd;
@@ -93,7 +109,7 @@ h2 {
     background-color: #1e90ff;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.1rem;
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
@@ -101,4 +117,62 @@ h2 {
 
 .actions button:hover {
     background-color: #58acff;
+}
+
+.dialog-header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.dialog-content {
+    color: #414141;
+    font-size: 0.9rem;
+    padding: 30px;
+}
+
+.dialog-content input {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.dialog-buttons {
+    padding-top: 25px;
+    text-align: right;
+}
+
+.confirm-button {
+    background-color: #1e90ff;
+    color: white;
+    border: 1px solid #1e90ff;
+    border-radius: 6px;
+    margin-right: 10px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #58acff;
+    border-color: #58acff;
+}
+
+.cancel-button {
+    background-color: #f5f7fa;
+    color: #414141;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #bdbdbd;
+}
+
+#errorMessage {
+    margin-top: 20px;
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
 }
