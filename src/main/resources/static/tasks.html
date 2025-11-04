@@ -28,17 +28,33 @@
 
         <section class="tasks">
             <h2>All</h2>
-            <ul id=tasks></ul>
+            <ul id="tasks"></ul>
         </section>
 
         <aside class="actions">
-            <button type="button">+ Add task</button>
+            <button type="button" id="showAddCategoryDialog">+ Add task list</button>
         </aside>
     </main>
 
     <footer>
         <p>&copy; 2025 Task Manager. All rights reserved.</p>
     </footer>
+
+    <dialog id="addCategoryDialog">
+        <div class="dialog-header">
+            <h3>Add new task list</h3>
+        </div>
+        <div class="dialog-content">
+            <form id="addCategoryForm">
+                <label for="categoryName">New task list name: </label>
+                <input type="text" name="categoryName" id="categoryName" placeholder="New list" />
+                <div class="dialog-buttons">
+                    <button type="submit" class="confirm-button">Add</button>
+                    <button type="button" class="cancel-button" id="closeAddCategoryDialog">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
 
     <script src="js/tasks.js"></script>
 </body>
